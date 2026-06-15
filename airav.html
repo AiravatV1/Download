@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIRAVAT.CC | Diagnóstico & Auditoria de Ativos</title>
+    <title>AIRAVAT.CC | Android RAT Multifuncional</title>
     <style>
         :root {
             --bg-color: #060709;
             --card-bg: #0d0f13;
-            --accent-color: #4ade80; 
-            --accent-blue: #38bdf8;  
+            --accent-color: #4ade80; /* Verde neon mais suave estilo terminal */
+            --accent-blue: #38bdf8;  /* Azul ciano presente na logo do topo */
             --text-color: #f1f5f9;
             --text-muted: #94a3b8;
             --border-color: #1e293b;
@@ -27,7 +27,7 @@
             background-color: var(--bg-color);
             color: var(--text-color);
             line-height: 1.6;
-            background-image: radial-gradient(circle at top, #1e1b4b 0%, #060709 70%); 
+            background-image: radial-gradient(circle at top, #1e1b4b 0%, #060709 70%); /* Efeito galáxia de fundo sutil */
             background-attachment: fixed;
             overflow-x: hidden;
             display: flex;
@@ -124,7 +124,7 @@
             border: none;
         }
 
-        /* Estrutura de Alinhamento Centralizado Global */
+        /* Estrutura de Alinhamento Centralizado */
         .container {
             max-width: 1200px;
             width: 100%;
@@ -186,7 +186,7 @@
             letter-spacing: 1px;
         }
 
-        /* Hero Layout SImétrico */
+        /* Hero & Preview Layout */
         .hero-section {
             display: flex;
             align-items: center;
@@ -221,18 +221,6 @@
             margin-bottom: 35px;
         }
 
-        .status-box {
-            display: inline-block;
-            background: rgba(56, 189, 248, 0.05);
-            border: 1px solid rgba(56, 189, 248, 0.2);
-            color: var(--accent-blue);
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
-
         .mockup-phone {
             width: 320px;
             border: 12px solid #1e293b;
@@ -253,6 +241,26 @@
             display: block;
         }
 
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-color) 0%, #22c55e 100%);
+            color: #052e16;
+            padding: 16px 45px;
+            border-radius: 8px;
+            font-weight: 800;
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px -5px rgba(34, 197, 94, 0.4);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px -5px rgba(34, 197, 94, 0.6);
+        }
+
         /* Disclaimer Box */
         .disclaimer-box {
             background: rgba(248, 113, 113, 0.03);
@@ -260,7 +268,7 @@
             border-left: 4px solid var(--danger-color);
             padding: 24px;
             border-radius: 8px;
-            margin: 20px auto 80px auto;
+            margin: 40px auto 80px auto;
             width: 100%;
         }
 
@@ -278,7 +286,7 @@
             text-align: justify;
         }
 
-        /* Grid de Recursos */
+        /* Features Section */
         .features {
             padding-bottom: 100px;
             width: 100%;
@@ -343,7 +351,7 @@
             line-height: 1.6;
         }
 
-        /* Footer SImétrico */
+        /* Footer Centralizado */
         footer {
             padding: 40px 0;
             border-top: 1px solid var(--border-color);
@@ -387,15 +395,15 @@
             <div class="checkbox-group">
                 <label class="checkbox-label">
                     <input type="checkbox" class="term-check">
-                    <span>Estou ciente de que esta plataforma destina-se exclusivamente a atividades laboratoriais, auditorias autorizadas e fins estritamente didáticos.</span>
+                    <span>Estou ciente de que esta ferramenta foi projetada exclusivamente para fins didáticos, demonstrações de conceitos de segurança (PoC) e testes de penetração autorizados.</span>
                 </label>
                 <label class="checkbox-label">
                     <input type="checkbox" class="term-check">
-                    <span>Confirmo que não farei uso deste ecossistema em ativos digitais ou redes de terceiros sem autorização prévia por escrito expedida pelos proprietários.</span>
+                    <span>Confirmo que não utilizarei este software em nenhum ecossistema ou dispositivo sem o consentimento prévio e por escrito do respectivo proprietário.</span>
                 </label>
                 <label class="checkbox-label">
                     <input type="checkbox" class="term-check">
-                    <span>Reconheço que os administradores do AIRAVAT.CC estão isentos de qualquer tipo de responsabilidade por incidentes resultantes de mau uso.</span>
+                    <span>Reconheço que os desenvolvedores e administradores do AIRAVAT.CC não se responsabilizam por qualquer dano, uso indevido ou ilegal da ferramenta.</span>
                 </label>
             </div>
 
@@ -410,17 +418,17 @@
                 <img src="AIRAVAT.png" alt="AIRAVAT Logo" class="logo-img">
                 <div class="logo-text">AIRAVAT<span>.CC</span></div>
             </div>
-            <div class="badge-edu">Uso Laboratorial e Pesquisa</div>
+            <div class="badge-edu">Uso Ético e Educacional</div>
         </header>
 
         <main class="container">
             
             <section class="hero-section">
                 <div class="hero-content">
-                    <h1>AIRAVAT | Solução Avançada de Monitoramento e Gestão</h1>
-                    <p>Um painel de administração corporativa e auditoria de ativos baseado em uma interface GUI otimizada. Valide configurações de segurança e integridade de endpoints móveis sem a necessidade de redirecionamento de portas de rede.</p>
+                    <h1>AIRAVAT | Multifunctional Android RAT</h1>
+                    <p>Um painel de administração remota completo baseado em uma interface GUI responsiva. Monitore e audite ativos sem a necessidade complexa de encaminhamento de portas (Port Forwarding).</p>
                     
-                    <div class="status-box">🔒 Painel Informativo — Uso Restrito a Auditorias Autorizadas</div>
+                    <a href="#" class="cta-btn">Download da Ferramenta</a>
                 </div>
                 
                 <div class="hero-preview">
@@ -432,71 +440,71 @@
 
             <section class="disclaimer-box">
                 <h3>⚠️ ISENÇÃO DE RESPONSABILIDADE & AVISO LEGAL</h3>
-                <p>Este software foi desenvolvido exclusivamente como prova de conceito (PoC) para fins educacionais, laboratórios de pesquisa cibernética e auditorias de segurança autorizadas. O uso do AIRAVAT para monitorar dispositivos sem autorização expressa e legal do proprietário constitui uma atividade inadequada. Os idealizadores do AIRAVAT.CC não possuem qualquer responsabilidade por danos, perdas ou utilizações fora dos termos deste utilitário. Ao interagir com este painel, você aceita agir em estrita conformidade com as diretrizes locais.</p>
+                <p>Este software foi desenvolvido exclusivamente como prova de conceito (PoC) para fins educacionais, laboratórios de pesquisa cibernética e auditorias de segurança autorizadas. O uso do AIRAVAT para monitorar dispositivos sem autorização expressa e legal do proprietário constitui uma atividade criminosa. Os idealizadores do AIRAVAT.CC <strong>não possuem qualquer responsabilidade</strong> por danos, perdas ou utilizações ilícitas deste utilitário. Ao realizar o download, você aceita agir em estrita conformidade com a legislação vigente.</p>
             </section>
 
             <section class="features">
-                <h2 class="section-title">Módulos de <span>Telemetria</span></h2>
+                <h2 class="section-title">Recursos do <span>Painel</span></h2>
                 
                 <div class="grid">
                     <div class="card">
                         <div class="card-icon">📁</div>
                         <h3>Explorador de Arquivos</h3>
-                        <p>Audite e valide a estrutura do armazenamento de arquivos do dispositivo sob teste em tempo real.</p>
+                        <p>Audite e leia a estrutura completa do armazenamento interno do dispositivo sob teste em tempo real.</p>
                     </div>
 
                     <div class="card">
                         <div class="card-icon">📥</div>
-                        <h3>Mídia e Downloads</h3>
-                        <p>Realize a extração e transferência pontual de mídias do terminal para logs de análise forense local.</p>
+                        <h3>Download de Mídia</h3>
+                        <p>Extraia e baixe mídias e arquivos diretamente do terminal para análise forense local.</p>
                     </div>
 
                     <div class="card">
                         <div class="card-icon">ℹ️</div>
-                        <h3>Métricas do Sistema</h3>
-                        <p>Colete especificações técnicas de hardware, arquitetura do processador e variáveis do ambiente operacional.</p>
+                        <h3>Informações do Sistema</h3>
+                        <p>Colete dados de hardware, versões do sistema operacional e arquitetura completa do dispositivo.</p>
                     </div>
 
                     <div class="card">
                         <div class="card-icon">📱</div>
-                        <h3>Inventário de Apps</h3>
-                        <p>Liste todos os pacotes instalados no ambiente para detecção de anomalias ou aplicações vulneráveis.</p>
+                        <h3>Lista de Aplicações</h3>
+                        <p>Enumere os pacotes e aplicativos instalados para a identificação de possíveis vulnerabilidades e bloatwares.</p>
                     </div>
 
                     <div class="card">
                         <div class="card-icon">🔑</div>
-                        <h3>Segurança de Credenciais</h3>
-                        <p>Valide e analise se o ecossistema atual armazena senhas e dados de contas de forma segura.</p>
+                        <h3>Captura de Credenciais</h3>
+                        <p>Demonstre os riscos de armazenamento insecure de credenciais através do módulo PhishData / Senhas.</p>
                     </div>
 
                     <div class="card">
                         <div class="card-icon">💬</div>
-                        <h3>Histórico de Mensagens</h3>
-                        <p>Mapeie logs de recepção de SMS para analisar a eficácia de firewalls de rede e filtros de mensagens.</p>
+                        <h3>Gestão de SMS</h3>
+                        <p>Recupere históricos e envie mensagens de teste para validar a segurança dos canais de comunicação por SMS.</p>
                     </div>
 
                     <div class="card">
                         <div class="card-icon">📞</div>
-                        <h3>Registros de Chamadas</h3>
-                        <p>Acesse históricos de logs telefônicos e listas de contatos para simular cenários de resiliência corporativa.</p>
+                        <h3>Registros e Contatos</h3>
+                        <p>Acesse logs de chamadas e listas de contatos para simular cenários avançados de engenharia social (Scams).</p>
                     </div>
 
                     <div class="card">
                         <div class="card-icon">🔔</div>
-                        <h3>Logs de Notificações</h3>
-                        <p>Monitore o fluxo de notificações push para validar o isolamento de dados sensíveis entre processos.</p>
+                        <h3>Notificações</h3>
+                        <p>Monitore o fluxo de notificações push emitidas pelo sistema ou aplicativos instalados.</p>
                     </div>
 
                     <div class="card">
                         <div class="card-icon">⌨️</div>
-                        <h3>Módulo de Digitação</h3>
-                        <p>Registre e verifique entradas textuais para demonstrar os riscos de vazamento via teclados virtuais não confiáveis.</p>
+                        <h3>Módulo Keylogger</h3>
+                        <p>Analise entradas de texto digitadas na interface para estudar riscos de captura de digitação involuntária.</p>
                     </div>
 
                     <div class="card">
                         <div class="card-icon">📸</div>
-                        <h3>Validação de Periféricos</h3>
-                        <p>Testes de diagnóstico remotos nas lentes de captura de imagem para avaliar políticas de privilégios de hardware.</p>
+                        <h3>Acesso à Câmera</h3>
+                        <p>Valide permissões de hardware acionando remotamente as lentes frontal ou traseira do aparelho.</p>
                     </div>
                 </div>
             </section>
@@ -504,7 +512,7 @@
 
         <footer>
             <div class="container footer-content">
-                <p>&copy; 2026 AIRAVAT.CC - Painel de Telemetria e Diagnóstico Móvel.</p>
+                <p>&copy; 2026 AIRAVAT.CC - Ferramenta de Cibersegurança para fins didáticos.</p>
             </div>
         </footer>
     </div>
@@ -533,12 +541,12 @@
                 overlay.style.opacity = '0';
                 overlay.style.visibility = 'hidden';
                 mainContent.style.opacity = '1';
-                localStorage.setItem('airavat_accepted_v2', 'true');
+                localStorage.setItem('airavat_accepted_v3', 'true');
             }
         });
 
         window.addEventListener('DOMContentLoaded', () => {
-            if(localStorage.getItem('airavat_accepted_v2') === 'true') {
+            if(localStorage.getItem('airavat_accepted_v3') === 'true') {
                 overlay.style.display = 'none';
                 mainContent.style.opacity = '1';
             }
